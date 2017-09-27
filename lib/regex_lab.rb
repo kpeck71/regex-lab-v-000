@@ -18,7 +18,7 @@ end
 #\b[A-Z]+\p{P}
 def first_word_capitalized_and_ends_with_punctuation?(text)
   binding.pry
-  if text.scan(/\b[A-Z].+\p{P}$/).empty?
+  if text.scan(/^[A-Z].+\p{P}$/).empty?
     false
   else
     true
