@@ -14,8 +14,8 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  #if text.scan(/\b[A-Z]+???\b/).empty?
-#    false
+  if text.scan(/\b[A-Z]+???\b/).empty?
+    false
   #end
 end
 
