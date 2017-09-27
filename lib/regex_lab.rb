@@ -13,6 +13,7 @@ def words_five_letters_long(text)
   text.scan(/\b\w{5}\b/)
 end
 
+#\b[A-Z]+\p{P}
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.scan(/\b[A-Z]...\p{Punct}/).empty?
     false
